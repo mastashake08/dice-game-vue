@@ -49,8 +49,21 @@ export default {
   border: 2px solid black;
   overflow: hidden;
   cursor: pointer;
+  background: linear-gradient(to bottom, #5c258d, #4389a2, #5c258d);
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
 }
-
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .dice.rolling {
   animation: rolling 1s linear infinite;
 }

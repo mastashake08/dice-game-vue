@@ -11,6 +11,9 @@
 
     </div>
     <p>
+      Earn money playing craps.
+    </p>
+    <p>
       Your point: {{currentPoint}}
       <button @click="rollDice"> Roll Dice</button>
     </p>
@@ -20,7 +23,7 @@
 <script>
 import Dice from './Dice'
 export default {
-  name: 'HelloWorld',
+  name: 'Game',
   data () {
     return {
       d1: 0,
